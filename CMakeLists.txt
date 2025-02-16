@@ -13,8 +13,7 @@ find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
-find_package(PCL REQUIRED COMPONENTS common io)
-find_package(visualization_msgs REQUIRED)  # Added visualization_msgs
+find_package(visualization_msgs REQUIRED)
 
 # Set C++ standard
 if(NOT CMAKE_CXX_STANDARD)
