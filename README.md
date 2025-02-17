@@ -11,10 +11,6 @@ ROS 2 C++ implementation of Extended Kalman filter (EKF) and Unscented Kalman fi
   - [Acknowledgements](#acknowledgements)
   - [Contact](#contact)
 
-<!-- ## Features
-
-- **Extended Kalman filter**: EKF. -->
-
 
 ## Installation
 
@@ -51,6 +47,75 @@ cd ~/ros2_ws && . install/setup.bash
 ros2 run kf_cpp ukf_ori_sim
 ```
 
+
+## KF v.s. EKF v.s. UKF
+
+The table below compares the process of each filter in each iteration.
+
+$$\begin{array}{l|l|l|l}
+\text{Process}                      &
+\text{Kalman filter (KF)}           & 
+\text{Extended Kalman filter (EKF)} & 
+\text{Unscented Kalman filter (UKF)} \\
+
+\hline 
+& & & \\
+
+\text{Prediction} &
+\mathbf{\bar x} = \mathbf{Fx} + \mathbf{Bu} & 
+\mathbf{\bar x} = f(\mathbf x, \mathbf u),\, \mathbf F = {\frac{\partial{f(\mathbf x_t, \mathbf u_t)}}{\partial{\mathbf x}}}\biggr|_{{\mathbf x_t},{\mathbf u_t}} & 
+\mathbf{\bar x} = \sum w^m\boldsymbol{\mathcal Y},\, \boldsymbol{\mathcal Y} = f(\boldsymbol\chi) \\
+
+\text{(Time update)} &
+\mathbf{\bar P} = \mathbf{FPF}^\mathsf{T}+\mathbf Q  & 
+\mathbf{\bar P} = \mathbf{FPF}^\mathsf{T}+\mathbf Q  &
+\mathbf{\bar P} = \sum w^c(\boldsymbol{\mathcal Y} - \mathbf{\bar x})(\boldsymbol{\mathcal Y} - \mathbf{\bar x})^\mathsf T+\mathbf Q \\
+
+\hline
+& & & \\
+
+& & & \boldsymbol\mu_z = \sum w^m\boldsymbol{\mathcal{Z}}, \boldsymbol{\mathcal Z} =  h(\boldsymbol{\mathcal{Y}}) \\
+
+\text{Update} &
+\textbf{y} = \mathbf z - \mathbf{H \bar{x}} & 
+\textbf{y} = \mathbf z - h(\bar{x}),\, \mathbf H = \frac{\partial{h(\bar{\mathbf x}_t)}}{\partial{\bar{\mathbf x}}}\biggr|_{\bar{\mathbf x}_t} &
+\mathbf y = \mathbf z - \boldsymbol\mu_z \\
+
+\text{(Measurement update)} &
+\mathbf S = \mathbf{H\bar PH}^\mathsf{T} + \mathbf R & 
+\mathbf S = \mathbf{H\bar PH}^\mathsf{T} + \mathbf R & 
+\mathbf P_z = \sum w^c{(\boldsymbol{\mathcal Z}-\boldsymbol\mu_z)(\boldsymbol{\mathcal{Z}}-\boldsymbol\mu_z)^\mathsf{T}} + \mathbf R \\
+
+& 
+\mathbf K = \mathbf{\bar PH}^\mathsf T \mathbf S^{-1} & 
+\mathbf K = \mathbf{\bar PH}^\mathsf T \mathbf S^{-1} &
+\mathbf K = \left[\sum w^c(\boldsymbol{\mathcal Y}-\bar{\mathbf x})(\boldsymbol{\mathcal{Z}}-\boldsymbol\mu_z)^\mathsf{T}\right] \mathbf P_z^{-1} \\
+
+&
+\mathbf x = \mathbf{\bar x} + \mathbf{Ky} & 
+\mathbf x = \mathbf{\bar x} + \mathbf{Ky} &
+\mathbf x = \mathbf{\bar x} + \mathbf{Ky} \\
+
+&
+\mathbf P= (\mathbf{I}-\mathbf{KH})\mathbf{\bar{P}} & 
+\mathbf P= (\mathbf{I}-\mathbf{KH})\mathbf{\bar{P}} &
+\mathbf P = \bar{\mathbf P} - \mathbf{KP_z}\mathbf{K}^\mathsf{T}
+\end{array}$$
+
+
+## Bibliography
+- EKF:
+  - [1]
+- UKF:
+  - [1] Rudolph Van der Merwe. "Sigma-Point Kalman Filters for Probabilistic Inference in Dynamic State-Space Models" dissertation (2004).
+
+  - [2] Simon J. Julier. "The Scaled Unscented Transformation". Proceedings of the American Control Conference 6. IEEE. (2002)
+
+  - [3] http://www.esdradar.com/brochures/Compact%20Tracking%2037250X.pdf
+
+  - [4] Julier, Simon J.; Uhlmann, Jeffrey "A New Extension of the Kalman  Filter to Nonlinear Systems". Proc. SPIE 3068, Signal Processing, Sensor Fusion, and Target Recognition VI, 182 (July 28, 1997)
+
+  - [5] Cholesky decomposition. Wikipedia. http://en.wikipedia.org/wiki/Cholesky_decomposition
 
 ## Acknowledgements
 
