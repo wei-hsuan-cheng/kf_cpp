@@ -8,6 +8,7 @@ ROS 2 C++ implementation of Extended Kalman filter (EKF) and Unscented Kalman fi
   - [Installation](#installation)
     - [Prerequisites](#prerequisites)
       - [Dependencies from `CMakeLists.txt`](#dependencies-from-cmakeliststxt)
+  - [KF v.s. EKF v.s. UKF](#kf-vs-ekf-vs-ukf)
   - [Acknowledgements](#acknowledgements)
   - [Contact](#contact)
 
