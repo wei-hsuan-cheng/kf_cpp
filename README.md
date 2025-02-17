@@ -3,12 +3,13 @@ ROS 2 C++ implementation of Extended Kalman filter (EKF) and Unscented Kalman fi
 
 ## Table of Contents
 
-- [kf_cpp](#kf_cpp)
+- [kf\_cpp](#kf_cpp)
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
     - [Prerequisites](#prerequisites)
       - [Dependencies from `CMakeLists.txt`](#dependencies-from-cmakeliststxt)
   - [KF v.s. EKF v.s. UKF](#kf-vs-ekf-vs-ukf)
+  - [Bibliography](#bibliography)
   - [Acknowledgements](#acknowledgements)
   - [Contact](#contact)
 
@@ -102,6 +103,10 @@ $$\begin{array}{l|l|l|l}
 \mathbf P= (\mathbf{I}-\mathbf{KH})\mathbf{\bar{P}} &
 \mathbf P = \bar{\mathbf P} - \mathbf{KP_z}\mathbf{K}^\mathsf{T}
 \end{array}$$
+
+<iframe src="kf_vs_ekf_vs_ukf.pdf" width="100%" height="600px" style="border: none;">
+    This browser does not support PDFs. Please download the PDF to view it: <a href="kf_vs_ekf_vs_ukf.pdf">Download PDF</a>
+</iframe>
 
 
 ## Bibliography
