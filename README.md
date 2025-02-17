@@ -54,7 +54,7 @@ ros2 run kf_cpp ukf_ori_sim
 
 The table below compares the process of each filter in each iteration.
 
-![kf_vs_ekf_vs_ukf](kf_vs_ekf_vs_ukf.png)
+![kf_vs_ekf_vs_ukf](assets/kf_vs_ekf_vs_ukf.png)
 
 
 ## Bibliography
