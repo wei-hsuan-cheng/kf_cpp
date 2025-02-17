@@ -1,8 +1,8 @@
-PWD /Users/whcheng/ros2_docker/ros2_docker_ws/src/kf_cpp
+PWD /Users/whcheng/ros2_docker/ros2_docker_ws/src/kf_cpp/assets
 INPUT /usr/local/texlive/2024/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/whcheng/ros2_docker/ros2_docker_ws/src/kf_cpp/kf_vs_ekf_vs_ukf_table.tex
+INPUT /Users/whcheng/ros2_docker/ros2_docker_ws/src/kf_cpp/assets/kf_vs_ekf_vs_ukf_table.tex
 OUTPUT kf_vs_ekf_vs_ukf_table.log
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/standalone/standalone.cls
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/standalone/standalone.cls

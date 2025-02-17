@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.26)  17 FEB 2025 15:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.26)  17 FEB 2025 15:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/whcheng/ros2_docker/ros2_docker_ws/src/kf_cpp/kf_vs_ekf_vs_ukf_table.tex
-(/Users/whcheng/ros2_docker/ros2_docker_ws/src/kf_cpp/kf_vs_ekf_vs_ukf_table.tex
+**/Users/whcheng/ros2_docker/ros2_docker_ws/src/kf_cpp/assets/kf_vs_ekf_vs_ukf_table.tex
+(/Users/whcheng/ros2_docker/ros2_docker_ws/src/kf_cpp/assets/kf_vs_ekf_vs_ukf_table.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/standalone/standalone.cls
@@ -791,12 +791,12 @@ L3 programming layer <2024-02-20>
  ) 
 Here is how much of TeX's memory you used:
  28915 strings out of 474116
- 586810 string characters out of 5743682
+ 586831 string characters out of 5743682
  1942187 words of memory out of 5000000
  50805 multiletter control sequences out of 15000+600000
  574727 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,12n,131p,480b,531s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,12n,131p,487b,531s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol-Bold10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb>
 Output written on kf_vs_ekf_vs_ukf_table.pdf (1 page, 146266 bytes).
 PDF statistics:
