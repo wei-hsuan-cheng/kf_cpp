@@ -75,12 +75,13 @@ The table below compares the process of each filter in each iteration.
 
 - **Kalman-and-Bayesian-Filters-in-Python**: The EKF algorithm is an C++ implementation adapted from the [Kalman-and-Bayesian-Filters-in-Python](https://github.com/rlabbe/Kalman-and-Bayesian-Filters-in-Python).
 - **hdl-localization-ROS2**: The UKF algorithm is adapted from the [hdl-localization-ROS2 codebase](https://github.com/pyc5714/hdl-localization-ROS2/blob/35de917029371c4de93fc8107ad25a09cca7b238/hdl_localization/include/kkl/alg/unscented_kalman_filter.hpp#L241).
-- **Robot Math Utils**: Some utilities from [Robot Math Utils](https://github.com/wei-hsuan-cheng/robot_math_utils) is used.
+- **Robot Math Utils**: Some utilities from [Robot Math Utils](https://github.com/wei-hsuan-cheng/robot_math_utils) are used.
 - **Eigen Library**: This library heavily relies on the Eigen library for linear algebra operations.
 
 ## Contact
 
 - **Author**: Wei-Hsuan Cheng [(johnathancheng0125@gmail.com)](mailto:johnathancheng0125@gmail.com)
+- **Homepage**: [wei-hsuan-cheng](https://wei-hsuan-cheng.github.io)
 - **GitHub**: [wei-hsuan-cheng](https://github.com/wei-hsuan-cheng)
 
 
